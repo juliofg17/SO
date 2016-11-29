@@ -1,0 +1,7 @@
+El programa del ejercicio 6 ejecuta otro programa de la siguiente forma:
+
+Crea un proceso hijo con fork().
+
+Después, con execl(...) transforma el proceso hijo (sin cambiar el PID) en un nuevo proceso que abre el programa pasado como argumento en execl(...), localizado en la direción también pasada como argumento en execl(...).
+
+Por último, con wait(&estado) espera a que los programas finalicen, y se acaba imprimiendo el PID y el estado del proceso.

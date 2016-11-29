@@ -1,0 +1,1 @@
+El programa llama a folk y crea un proceso hijo. Al quedar almacenado en un búffer temporal el código que printf quería imprimir, el nuevo proceso libera el búfer, volviendo a mostrar el código que ya se mostró con printf. Para solucionar ésto, llamamos a una función que libere al búfer.
